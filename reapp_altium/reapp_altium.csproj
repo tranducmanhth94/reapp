@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B7EE8ADA-8F61-4E46-BE94-F3DA80A69BAF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>reapp_altium</RootNamespace>
+    <AssemblyName>reapp_altium</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge, Version=2.2.5.0, Culture=neutral, PublicKeyToken=c1db6ff4eaa06aeb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\image\CSharp-image-AForge-master\2016310249_ObjectDetecting\library\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Controls">
+      <HintPath>..\image\CSharp-image-AForge-master\2016310249_ObjectDetecting\library\AForge.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.DebuggerVisualizers %282010%29">
+      <HintPath>..\image\CSharp-image-AForge-master\2016310249_ObjectDetecting\library\AForge.DebuggerVisualizers (2010).dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Genetic">
+      <HintPath>..\image\CSharp-image-AForge-master\2016310249_ObjectDetecting\library\AForge.Genetic.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Imaging">
+      <HintPath>..\image\CSharp-image-AForge-master\2016310249_ObjectDetecting\library\AForge.Imaging.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Imaging.Formats">
+      <HintPath>..\image\CSharp-image-AForge-master\2016310249_ObjectDetecting\library\AForge.Imaging.Formats.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Imaging.IPPrototyper">
+      <HintPath>..\image\CSharp-image-AForge-master\2016310249_ObjectDetecting\library\AForge.Imaging.IPPrototyper.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.MachineLearning">
+      <HintPath>..\image\CSharp-image-AForge-master\2016310249_ObjectDetecting\library\AForge.MachineLearning.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Math">
+      <HintPath>..\image\CSharp-image-AForge-master\2016310249_ObjectDetecting\library\AForge.Math.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video">
+      <HintPath>G:\vs_thang\camera\Release\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow">
+      <HintPath>G:\vs_thang\camera\Release\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="BasselTech CamCapture, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\BasselTech CamCapture.dll</HintPath>
+    </Reference>
+    <Reference Include="MessagingToolkit.QRCode, Version=1.0.3541.23206, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\MessagingToolkit.QRCode.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="zxing, Version=0.16.6.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZXing.Net.0.16.6\lib\net47\zxing.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing.presentation, Version=0.16.6.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZXing.Net.0.16.6\lib\net47\zxing.presentation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addDLL温度計.cs" />
+    <Compile Include="microTimer.cs" />
+    <Compile Include="Extensions_callproject.cs" />
+    <Compile Include="Form_Cam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Cam.Designer.cs">
+      <DependentUpon>Form_Cam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Grap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Grap.Designer.cs">
+      <DependentUpon>Grap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="print_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="print_Form.Designer.cs">
+      <DependentUpon>print_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="listType.cs" />
+    <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="manual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manual.Designer.cs">
+      <DependentUpon>manual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funny.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Funny.Designer.cs">
+      <DependentUpon>Funny.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Automatic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Automatic.Designer.cs">
+      <DependentUpon>Automatic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login_form.Designer.cs">
+      <DependentUpon>Login_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main.Designer.cs">
+      <DependentUpon>main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sqlconnection.cs" />
+    <EmbeddedResource Include="Form_Cam.resx">
+      <DependentUpon>Form_Cam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grap.resx">
+      <DependentUpon>Grap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="print_Form.resx">
+      <DependentUpon>print_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manual.resx">
+      <DependentUpon>manual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Funny.resx">
+      <DependentUpon>Funny.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Automatic.resx">
+      <DependentUpon>Automatic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_form.resx">
+      <DependentUpon>Login_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main.resx">
+      <DependentUpon>main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\job_avatar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="DATABUILDERAXLibLB">
+      <Guid>{78ABE6E0-D2A0-4546-9743-7619E303CE23}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DTO\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\PH20.jpg" />
+    <None Include="Resources\QRicon.jpg" />
+    <Content Include="Resources\TdTr73UCom.dll" />
+    <Content Include="Resources\TdTr7UComEx.dll" />
+    <None Include="Resources\晴れ.jpg" />
+    <None Include="Resources\あめ.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\image\CSharp-image-AForge-master\2016310249_ObjectDetecting\showCamera.csproj">
+      <Project>{293611bc-8032-448d-a76a-db063ec496c0}</Project>
+      <Name>showCamera</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
